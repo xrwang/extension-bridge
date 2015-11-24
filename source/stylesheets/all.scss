@@ -12,14 +12,20 @@ $warm-gray:#929292;
 
 
 @import "buttons";
+@import "forms";
 
 
 body {
   text-align: center;
+  margin: auto;
   font-family: "Lato", sans-serif;
 }
 
+// Some basic font colors
 
+.orange-text{
+  color: $bridge-orange;
+}
 
 
 h1 {
@@ -31,49 +37,10 @@ h1 {
   background: none;
   margin: 0; }
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
-
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
+  h3{
+    color: $warm-gray;
   }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
 
-// Some basic font colors
-
-.orange-text{
-  color: $bridge-orange;
-}
 
 //Basic Backgrounds
 
@@ -97,6 +64,15 @@ h1 {
   background-image: url("/images/contours.svg");
 }
 
+//any semblance of a grid
+
+.column{
+  display: flex;
+  flex: none;
+  flex-direction: column;
+}
+
+
 //Top back bar
 
 .back-bar{
@@ -119,6 +95,8 @@ h1 {
   }
 }
 
+//individual screens section
+
 // Login Screen
 .row{
 padding: 1.5em 0em;
@@ -134,15 +112,23 @@ padding: 1.5em 0em;
   }
 }
 
-//choices page
 
-
-.button-column{
-  display: flex;
-  flex: none;
-  flex-direction: column;
-}
-h3.choose{
-  color: $warm-gray;
+//choices (choose action) page
+.choose{
   margin-top: 80px;
+}
+
+.action{
+  margin-top: 0px;
+  font-size: 24px;
+}
+
+.light-gray-background{
+  background-color: $light-gray;
+  margin: 10px 20px 10px 20px;
+  border-radius: 10px;
+  padding: 30px 0;
+}
+
+.twitter-tweet{
 }
