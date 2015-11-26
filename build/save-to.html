@@ -91,17 +91,37 @@
     <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="choose-action">
+  <body class="save-to">
     <div class="back-bar">
   <a href="javascript:history.back()"><img src="images/backbutton.svg">Back</a>
 </div>
 
 <div class="textured">
-  <h3 class="choose">What would you like to do with this post?</h3>
-  <div class="column button-column">
-    <a href="save-to.html" class="btn btn-large">Save to existing project for translation</a>
-    <a href="translate.html" class="btn btn-large">Translate this post and add it to a project</a>
+
+  <div class="light-gray-background">
+
+    <h3 class="action">Save to existing project for translation</h3>
+    <div class="column form-column">
+      <div class="twitter-tweet">
+      <img src="images/twitter-tweet.png"></div>
+
+
+      <form>
+        <label for="project">Project:</label>
+            <select class="dropdown">
+              <option>Milk</option>
+              <option>Coffee</option>
+              <option>Tea</option>
+            </select>
+      </form>
+
+
+      <a href="save-to.html" class="btn btn-large">Add to Project</a>
+
+    </div>
+
   </div>
+
 </div>
 
   </body>
