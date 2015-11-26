@@ -136,4 +136,25 @@ padding: 1.5em 0em;
 
 
 
-//save to page
+//unassigned page
+img.unassigned{
+  position: fixed;
+  margin-top: 0;
+  margin-left: 0px;
+}
+
+.main-message{
+  text-align: center;
+  margin-top: 400px;
+  a{
+    color: $bridge-orange;
+  }
+}
+
+
+//general error page
+img.bug{
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 240px;
+}

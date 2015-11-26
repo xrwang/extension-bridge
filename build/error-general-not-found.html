@@ -91,13 +91,20 @@
     <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="index">
-    <p>Open window, test size</p>
-<ul>
-<li><a href="extension-login.html" class="popupwindow" rel="height:600,width:700">Login flow</a> - width 700, height 600</li>
-<li><a href="error-unassigned-project.html" class="popupwindow" rel="height:600,width:700">Error-Unassigned project</a><?li>
-<li><a href="error-general-not-found.html" class="popupwindow" rel="height:600,width:700">Error state- general</a></li>
-</ul>
+  <body class="error-general-not-found">
+    <div class="back-bar">
+  <a href="javascript:history.back()"><img src="images/backbutton.svg">Back</a>
+</div>
+
+<div class="textured">
+  <div class="column">
+    <img src="images/error-general-bug.svg" class="bug">
+    <div class="main-message">
+    <h3 class="error">Something went wrong, sorry about that.
+      Either the original post has been deleted, or we don't have permission from you to post.</h3>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
