@@ -91,9 +91,65 @@
     <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="index">
-    <p>Open window, test size</p>
-<a href="extension-login.html" class="popupwindow" rel="height:600,width:700">Example 1</a> - 768 w height
+  <body class="translate">
+    <div class="back-bar">
+  <a href="javascript:history.back()"><img src="images/backbutton.svg">Back</a>
+</div>
+
+<div class="textured">
+
+  <div class="light-gray-background">
+
+    <h3 class="action">Translate this post</h3>
+    <div class="column form-column">
+      <div class="twitter-tweet">
+      <img src="images/twitter-tweet.png"></div>
+
+
+      <form>
+        <label for="translation">Translation</label>
+
+        <div class="language-setting">
+            <select id="source-language">
+              <option>English</option>
+              <option>Arabic</option>
+              <option>Chinese</option>
+            </select>
+            to
+            <select id="target-language">
+              <option>English</option>
+              <option>Arabic</option>
+              <option>Chinese</option>
+            </select>
+          </div>
+
+            <textarea name="translation-text" id="translation" onfocus="this.value=''; setbg('#F4F4F4');" onblur="setbg('white')">
+            Enter your translation here
+            </textarea>
+
+            <label for="annotation">Annotation</label>
+                <textarea name="annotation-text" id="annotation" onfocus="this.value=''; setbg('#F4F4F4');" onblur="setbg('white')">
+                  Enter your Annotation here
+                </textarea>
+
+      </form>
+
+
+      <a href="confirmation-translated.html" class="btn btn-large">Submit Translation</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+function setbg(color)
+{
+document.getElementById("translation").style.background=color
+}
+</script>
 
   </body>
 </html>

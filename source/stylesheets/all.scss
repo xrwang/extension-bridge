@@ -3,14 +3,8 @@
 
 
 
-
-$bridge-orange: #FF4F00;
-$keyboard-gray: #ABB5BD;
-$light-gray:#F4F4F4;
-$warm-gray:#929292;
-
-
-
+@import "normalize";
+@import "colors";
 @import "buttons";
 @import "forms";
 
@@ -37,7 +31,7 @@ h1 {
   background: none;
   margin: 0; }
 
-  h3{
+  h3,h2{
     color: $warm-gray;
   }
 
@@ -105,10 +99,17 @@ padding: 1.5em 0em;
   margin-top: 5em;
 }
 
-.login-header{
+.login-header, .header-general{
   padding-top: 5em;
   h1{
-    padding-top: 2em;
+    padding-top: 1em;
+  }
+  h2{
+    padding-top: 0;
+  }
+  a.plain-link{
+    color: $bridge-orange;
+    font-size: 1.5em;
   }
 }
 
@@ -136,9 +137,3 @@ padding: 1.5em 0em;
 
 
 //save to page
-
-label{
-  display: block;
-  float: left;
-  margin: 10px;
-}
